@@ -128,6 +128,38 @@
         .spotlight-glow {
             background: radial-gradient(circle at 50% 0%, rgba(255, 236, 179, 0.42) 0%, rgba(255, 255, 255, 0) 70%);
         }
+    /* --- URBANA Motion & Hover Effects --- */
+.service-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(197, 160, 89, 0.1);
+    border-color: #d4a84f;
+    background-color: #ffffff;
+}
+.service-card:hover .icon-wrapper {
+    background-color: #fdfaf6;
+    border-color: #d4a84f;
+    box-shadow: inset 0 0 10px rgba(197, 160, 89, 0.1);
+}
+.animate-header {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.animate-slide-up {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.animate-header.in-view,
+.animate-slide-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
     </style>
 </head>
 <body class="antialiased selection:bg-urbana-gold selection:text-white">
