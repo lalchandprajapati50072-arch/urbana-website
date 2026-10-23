@@ -273,58 +273,76 @@
 
     <!-- Interactive Wall Art Studio -->
    <!-- Services Section Start -->
-<section id="services" class="urbana-services-section py-20 bg-[#f5f2eb]">
+<!-- Services Section Start -->
+<section id="services" class="urbana-services-section py-20 bg-[#f5f2eb] overflow-hidden">
   <div class="container mx-auto px-4 max-w-6xl">
-    <div class="section-header animate-card text-center mb-12">
+    <div class="section-header text-center mb-16 animate-header">
       <h2 class="text-4xl uppercase tracking-widest text-[#1a1a1a] mb-3 font-royal">Our Services</h2>
       <p class="text-lg text-[#5a5047]">Comprehensive interior & architectural solutions for a modern lifestyle.</p>
     </div>
     
-    <div class="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+      <!-- Background Abstract Elements (Optional, for added style) -->
+      <div class="absolute top-[-50px] left-[-50px] w-64 h-64 bg-[#c5a059] opacity-5 rounded-full blur-3xl z-0"></div>
+      <div class="absolute bottom-[-50px] right-[-50px] w-80 h-80 bg-[#c5a059] opacity-5 rounded-full blur-3xl z-0"></div>
+
       <!-- Furniture Design -->
-      <div class="service-card animate-card bg-white p-10 rounded-lg text-center border border-[#e8e0d5] hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl" style="transition-delay: 0.1s;">
-        <div class="icon text-5xl mb-6 text-urbana-gold"><i class="fa-solid fa-couch"></i></div>
-        <h3 class="text-xl font-semibold uppercase tracking-wide text-[#1a1a1a] mb-4">Furniture Design</h3>
-        <p class="text-[#665d55] leading-relaxed">Bespoke modern furniture crafted to perfectly fit your space and aesthetic.</p>
+      <div class="service-card animate-slide-up bg-white/80 backdrop-blur-sm p-10 rounded-2xl text-center border border-[#e8e0d5] relative z-10" style="transition-delay: 0.1s;">
+        <div class="icon-wrapper mx-auto mb-6 w-20 h-20 flex items-center justify-center rounded-full bg-[#fcfbf9] border border-[#f0ebe1] shadow-sm transition-transform duration-500 hover:rotate-12">
+            <i class="fa-solid fa-couch text-3xl text-[#c5a059]"></i>
+        </div>
+        <h3 class="text-xl font-semibold uppercase tracking-widest text-[#2c251f] mb-4 font-royal">Furniture Design</h3>
+        <p class="text-[#665d55] text-sm leading-relaxed">Description: A modern designer seating & table.</p>
       </div>
 
       <!-- Marble & Tiles Crafting -->
-      <div class="service-card animate-card bg-white p-10 rounded-lg text-center border border-[#e8e0d5] hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl" style="transition-delay: 0.2s;">
-        <div class="icon text-5xl mb-6 text-urbana-gold"><i class="fa-solid fa-table-cells-large"></i></div>
-        <h3 class="text-xl font-semibold uppercase tracking-wide text-[#1a1a1a] mb-4">Marble & Tiles Crafting</h3>
-        <p class="text-[#665d55] leading-relaxed">Cutting, fitting, and design for kitchens, bathrooms, halls, and TV walls.</p>
+      <div class="service-card animate-slide-up bg-white/80 backdrop-blur-sm p-10 rounded-2xl text-center border border-[#e8e0d5] relative z-10" style="transition-delay: 0.2s;">
+        <div class="icon-wrapper mx-auto mb-6 w-20 h-20 flex items-center justify-center rounded-full bg-[#fcfbf9] border border-[#f0ebe1] shadow-sm transition-transform duration-500 hover:rotate-12">
+            <i class="fa-solid fa-table-cells-large text-3xl text-[#c5a059]"></i>
+        </div>
+        <h3 class="text-xl font-semibold uppercase tracking-widest text-[#2c251f] mb-4 font-royal">Marble & Tiles Crafting</h3>
+        <p class="text-[#665d55] text-sm leading-relaxed">Cutting, fitting & design for kitchens, bathrooms, halls, & TV walls.</p>
       </div>
 
       <!-- POP Design -->
-      <div class="service-card animate-card bg-white p-10 rounded-lg text-center border border-[#e8e0d5] hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl" style="transition-delay: 0.3s;">
-        <div class="icon text-5xl mb-6 text-urbana-gold"><i class="fa-solid fa-layer-group"></i></div>
-        <h3 class="text-xl font-semibold uppercase tracking-wide text-[#1a1a1a] mb-4">POP Design</h3>
-        <p class="text-[#665d55] leading-relaxed">Architectural ceiling layers and seamless patterns for a premium finish.</p>
+      <div class="service-card animate-slide-up bg-white/80 backdrop-blur-sm p-10 rounded-2xl text-center border border-[#e8e0d5] relative z-10" style="transition-delay: 0.3s;">
+        <div class="icon-wrapper mx-auto mb-6 w-20 h-20 flex items-center justify-center rounded-full bg-[#fcfbf9] border border-[#f0ebe1] shadow-sm transition-transform duration-500 hover:rotate-12">
+            <i class="fa-solid fa-layer-group text-3xl text-[#c5a059]"></i>
+        </div>
+        <h3 class="text-xl font-semibold uppercase tracking-widest text-[#2c251f] mb-4 font-royal">POP Design</h3>
+        <p class="text-[#665d55] text-sm leading-relaxed">Description: Architectural ceiling, layers/patterns.</p>
       </div>
 
       <!-- CNC Design -->
-      <div class="service-card animate-card bg-white p-10 rounded-lg text-center border border-[#e8e0d5] hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl" style="transition-delay: 0.4s;">
-        <div class="icon text-5xl mb-6 text-urbana-gold"><i class="fa-solid fa-vector-square"></i></div>
-        <h3 class="text-xl font-semibold uppercase tracking-wide text-[#1a1a1a] mb-4">CNC Design</h3>
-        <p class="text-[#665d55] leading-relaxed">Intricate geometric and laser-cut patterns for elegant room partitions.</p>
+      <div class="service-card animate-slide-up bg-white/80 backdrop-blur-sm p-10 rounded-2xl text-center border border-[#e8e0d5] relative z-10" style="transition-delay: 0.4s;">
+         <div class="icon-wrapper mx-auto mb-6 w-20 h-20 flex items-center justify-center rounded-full bg-[#fcfbf9] border border-[#f0ebe1] shadow-sm transition-transform duration-500 hover:rotate-12">
+            <i class="fa-solid fa-vector-square text-3xl text-[#c5a059]"></i>
+        </div>
+        <h3 class="text-xl font-semibold uppercase tracking-widest text-[#2c251f] mb-4 font-royal">CNC Design</h3>
+        <p class="text-[#665d55] text-sm leading-relaxed">Description: Intricate geometric/laser-cut ltr.</p>
       </div>
 
       <!-- Lighting Design -->
-      <div class="service-card animate-card bg-white p-10 rounded-lg text-center border border-[#e8e0d5] hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl" style="transition-delay: 0.5s;">
-        <div class="icon text-5xl mb-6 text-urbana-gold"><i class="fa-solid fa-lamp"></i></div>
-        <h3 class="text-xl font-semibold uppercase tracking-wide text-[#1a1a1a] mb-4">Lighting Design</h3>
-        <p class="text-[#665d55] leading-relaxed">Advanced ambient and cove lighting solutions for a contemporary look.</p>
+      <div class="service-card animate-slide-up bg-white/80 backdrop-blur-sm p-10 rounded-2xl text-center border border-[#e8e0d5] relative z-10" style="transition-delay: 0.5s;">
+         <div class="icon-wrapper mx-auto mb-6 w-20 h-20 flex items-center justify-center rounded-full bg-[#fcfbf9] border border-[#f0ebe1] shadow-sm transition-transform duration-500 hover:rotate-12">
+            <i class="fa-solid fa-lamp text-3xl text-[#c5a059]"></i>
+        </div>
+        <h3 class="text-xl font-semibold uppercase tracking-widest text-[#2c251f] mb-4 font-royal">Lighting Design</h3>
+        <p class="text-[#665d55] text-sm leading-relaxed">Description: A contemporary pendant/indoor lighting.</p>
       </div>
 
-      <!-- Home Decor -->
-      <div class="service-card animate-card bg-white p-10 rounded-lg text-center border border-[#e8e0d5] hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl" style="transition-delay: 0.6s;">
-        <div class="icon text-5xl mb-6 text-urbana-gold"><i class="fa-solid fa-vase"></i></div>
-        <h3 class="text-xl font-semibold uppercase tracking-wide text-[#1a1a1a] mb-4">Home Decor</h3>
-        <p class="text-[#665d55] leading-relaxed">Curated styling and decor elements that bring warmth to your interior spaces.</p>
+      <!-- Home Decor & Styling -->
+      <div class="service-card animate-slide-up bg-white/80 backdrop-blur-sm p-10 rounded-2xl text-center border border-[#e8e0d5] relative z-10" style="transition-delay: 0.6s;">
+         <div class="icon-wrapper mx-auto mb-6 w-20 h-20 flex items-center justify-center rounded-full bg-[#fcfbf9] border border-[#f0ebe1] shadow-sm transition-transform duration-500 hover:rotate-12">
+            <i class="fa-solid fa-vase text-3xl text-[#c5a059]"></i>
+        </div>
+        <h3 class="text-xl font-semibold uppercase tracking-widest text-[#2c251f] mb-4 font-royal">Home Decor & Styling</h3>
+        <p class="text-[#665d55] text-sm leading-relaxed">Description: Curated decor/vase/interior objects.</p>
       </div>
     </div>
   </div>
 </section>
+<!-- Services Section End -->
 <!-- Services Section End -->
 
     <!-- Core Services Section -->
