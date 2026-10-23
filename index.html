@@ -272,77 +272,60 @@
     </section>
 
     <!-- Interactive Wall Art Studio -->
-    <section id="art-studio" class="py-20 bg-urbana-charcoal text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-urbana-goldLight text-xs font-bold uppercase tracking-widest">URBANA Signature Spiritual Decor</span>
-                <h2 class="text-3xl sm:text-4xl font-bold mt-2">Interactive Wall & Frame Studio</h2>
-                <p class="text-stone-300 mt-3 text-sm sm:text-base">
-                    See how our signature <strong>Geometric Lord Krishna Canvas (`krishna.jpg`)</strong> transforms your living room or meditation foyer. Click below to test different wall colors, frame styles, and warm ceiling spotlights!
-                </p>
-            </div>
+   <!-- Services Section Start -->
+<section id="services" class="urbana-services-section py-20 bg-[#f5f2eb]">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <div class="section-header animate-card text-center mb-12">
+      <h2 class="text-4xl uppercase tracking-widest text-[#1a1a1a] mb-3 font-royal">Our Services</h2>
+      <p class="text-lg text-[#5a5047]">Comprehensive interior & architectural solutions for a modern lifestyle.</p>
+    </div>
+    
+    <div class="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Furniture Design -->
+      <div class="service-card animate-card bg-white p-10 rounded-lg text-center border border-[#e8e0d5] hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl" style="transition-delay: 0.1s;">
+        <div class="icon text-5xl mb-6 text-urbana-gold"><i class="fa-solid fa-couch"></i></div>
+        <h3 class="text-xl font-semibold uppercase tracking-wide text-[#1a1a1a] mb-4">Furniture Design</h3>
+        <p class="text-[#665d55] leading-relaxed">Bespoke modern furniture crafted to perfectly fit your space and aesthetic.</p>
+      </div>
 
-            <div class="grid lg:grid-cols-12 gap-8 items-center">
-                <!-- Interactive Wall Stage -->
-                <div class="lg:col-span-7">
-                    <div id="wallStage" class="relative rounded-3xl p-10 sm:p-16 min-h-[460px] flex flex-col items-center justify-center transition-colors duration-500 border border-white/15 shadow-2xl overflow-hidden" style="background-color: #1F242D;">
-                        <!-- Overhead Spotlight Layer -->
-                        <div id="spotlightLayer" class="absolute inset-0 pointer-events-none spotlight-glow transition-opacity duration-500"></div>
+      <!-- Marble & Tiles Crafting -->
+      <div class="service-card animate-card bg-white p-10 rounded-lg text-center border border-[#e8e0d5] hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl" style="transition-delay: 0.2s;">
+        <div class="icon text-5xl mb-6 text-urbana-gold"><i class="fa-solid fa-table-cells-large"></i></div>
+        <h3 class="text-xl font-semibold uppercase tracking-wide text-[#1a1a1a] mb-4">Marble & Tiles Crafting</h3>
+        <p class="text-[#665d55] leading-relaxed">Cutting, fitting, and design for kitchens, bathrooms, halls, and TV walls.</p>
+      </div>
 
-                        <!-- Artwork Frame -->
-                        <div id="artFrame" class="relative z-10 p-3 bg-white shadow-[0_25px_60px_rgba(0,0,0,0.65)] transition-all duration-300 border-[10px] border-[#B58328] rounded-sm">
-                            <img id="studioArtImage" src="krishna.jpg" 
-                                 alt="Lord Krishna Geometric Wall Art by URBANA Home Interior Studio" 
-                                 class="w-64 sm:w-80 h-64 sm:h-80 object-cover block">
-                        </div>
+      <!-- POP Design -->
+      <div class="service-card animate-card bg-white p-10 rounded-lg text-center border border-[#e8e0d5] hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl" style="transition-delay: 0.3s;">
+        <div class="icon text-5xl mb-6 text-urbana-gold"><i class="fa-solid fa-layer-group"></i></div>
+        <h3 class="text-xl font-semibold uppercase tracking-wide text-[#1a1a1a] mb-4">POP Design</h3>
+        <p class="text-[#665d55] leading-relaxed">Architectural ceiling layers and seamless patterns for a premium finish.</p>
+      </div>
 
-                        <!-- Minimal Sofa Silhouette for Scale -->
-                        <div class="relative z-10 mt-10 w-full max-w-md flex flex-col items-center opacity-85">
-                            <div class="w-4/5 h-8 bg-stone-800/90 rounded-t-2xl border-t border-white/10"></div>
-                            <div class="w-full h-6 bg-stone-900 rounded-xl shadow-lg"></div>
-                        </div>
-                    </div>
-                </div>
+      <!-- CNC Design -->
+      <div class="service-card animate-card bg-white p-10 rounded-lg text-center border border-[#e8e0d5] hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl" style="transition-delay: 0.4s;">
+        <div class="icon text-5xl mb-6 text-urbana-gold"><i class="fa-solid fa-vector-square"></i></div>
+        <h3 class="text-xl font-semibold uppercase tracking-wide text-[#1a1a1a] mb-4">CNC Design</h3>
+        <p class="text-[#665d55] leading-relaxed">Intricate geometric and laser-cut patterns for elegant room partitions.</p>
+      </div>
 
-                <!-- Customizer Controls -->
-                <div class="lg:col-span-5 bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-8 space-y-6">
-                    <div>
-                        <label class="block text-xs uppercase tracking-wider text-urbana-goldLight font-semibold mb-3">1. Select Living Room Wall Color</label>
-                        <div id="wallColorButtons" class="flex flex-wrap gap-3">
-                            <button onclick="setWallColor('#1F242D', 'Royal Charcoal')" class="px-3.5 py-2 rounded-xl bg-[#1F242D] border border-white/30 text-xs font-medium hover:scale-105 transition">Royal Charcoal</button>
-                            <button onclick="setWallColor('#F4EFE6', 'Warm Ivory')" class="px-3.5 py-2 rounded-xl bg-[#F4EFE6] text-stone-900 text-xs font-semibold hover:scale-105 transition">Warm Ivory</button>
-                            <button onclick="setWallColor('#13332A', 'Emerald Forest')" class="px-3.5 py-2 rounded-xl bg-[#13332A] border border-white/20 text-xs font-medium hover:scale-105 transition">Emerald Green</button>
-                            <button onclick="setWallColor('#0F2537', 'Peacock Navy')" class="px-3.5 py-2 rounded-xl bg-[#0F2537] border border-white/20 text-xs font-medium hover:scale-105 transition">Peacock Blue</button>
-                            <button onclick="setWallColor('#5C2C23', 'Earthy Terracotta')" class="px-3.5 py-2 rounded-xl bg-[#5C2C23] border border-white/20 text-xs font-medium hover:scale-105 transition">Terracotta</button>
-                        </div>
-                    </div>
+      <!-- Lighting Design -->
+      <div class="service-card animate-card bg-white p-10 rounded-lg text-center border border-[#e8e0d5] hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl" style="transition-delay: 0.5s;">
+        <div class="icon text-5xl mb-6 text-urbana-gold"><i class="fa-solid fa-lamp"></i></div>
+        <h3 class="text-xl font-semibold uppercase tracking-wide text-[#1a1a1a] mb-4">Lighting Design</h3>
+        <p class="text-[#665d55] leading-relaxed">Advanced ambient and cove lighting solutions for a contemporary look.</p>
+      </div>
 
-                    <div>
-                        <label class="block text-xs uppercase tracking-wider text-urbana-goldLight font-semibold mb-3">2. Choose Frame Finish</label>
-                        <div class="grid grid-cols-3 gap-3">
-                            <button onclick="setFrameStyle('#B58328', '12px')" class="py-2.5 px-3 rounded-xl bg-urbana-gold/20 border border-urbana-gold text-xs font-semibold">Antique Gold</button>
-                            <button onclick="setFrameStyle('#111111', '12px')" class="py-2.5 px-3 rounded-xl bg-stone-800 border border-white/20 text-xs font-semibold">Matte Black</button>
-                            <button onclick="setFrameStyle('transparent', '0px')" class="py-2.5 px-3 rounded-xl bg-stone-800 border border-white/20 text-xs font-semibold">Frameless Canvas</button>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-between pt-2 border-t border-white/10">
-                        <div>
-                            <p class="text-sm font-semibold">Warm Ceiling Spotlight</p>
-                            <p class="text-xs text-stone-400">Preview gallery-style museum lighting</p>
-                        </div>
-                        <button id="spotlightBtn" onclick="toggleSpotlight()" class="px-4 py-2 rounded-full bg-urbana-gold text-white text-xs font-bold">ON</button>
-                    </div>
-
-                    <div class="pt-4">
-                        <a href="#contact" class="block w-full text-center py-3.5 rounded-xl gold-gradient text-white font-semibold shadow-lg">
-                            Order Custom Wall Art & Interior Theme
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <!-- Home Decor -->
+      <div class="service-card animate-card bg-white p-10 rounded-lg text-center border border-[#e8e0d5] hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-xl" style="transition-delay: 0.6s;">
+        <div class="icon text-5xl mb-6 text-urbana-gold"><i class="fa-solid fa-vase"></i></div>
+        <h3 class="text-xl font-semibold uppercase tracking-wide text-[#1a1a1a] mb-4">Home Decor</h3>
+        <p class="text-[#665d55] leading-relaxed">Curated styling and decor elements that bring warmth to your interior spaces.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Services Section End -->
 
     <!-- Core Services Section -->
     <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
