@@ -170,27 +170,6 @@
     transform: translateY(0);
 }
     </style>
-<style>
-    /* === SAFE MOBILE MOTION & IMAGE FIX === */
-    @media only screen and (max-width: 768px) {
-        /* Mobile par khulte hi smooth Motion aayega */
-        body {
-            animation: smoothLoad 0.8s ease-out forwards;
-            overflow-x: hidden; 
-        }
-
-        @keyframes smoothLoad {
-            0% { opacity: 0; transform: translateY(15px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        /* Sirf badi photos ko mobile ke bahar jane se rokega, baki design nahi chhedega */
-        img, video, iframe {
-            max-width: 100% !important;
-            height: auto !important;
-        }
-    }
-</style>
 </head>
 <body class="antialiased selection:bg-urbana-gold selection:text-white">
 
