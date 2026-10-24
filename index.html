@@ -171,38 +171,23 @@
 }
     </style>
 <style>
-    /* === DESKTOP KUCH NAHI BADLEGA, SIRF MOBILE & TABLET KE LIYE === */
+    /* === SAFE MOBILE MOTION & IMAGE FIX === */
     @media only screen and (max-width: 768px) {
-        
-        /* 1. Mobile par khulte hi Motion (Animation) aayega */
+        /* Mobile par khulte hi smooth Motion aayega */
         body {
             animation: smoothLoad 0.8s ease-out forwards;
-            padding: 0 10px;
             overflow-x: hidden; 
         }
 
-        /* Motion ka design (Fade aur Slide-up) */
         @keyframes smoothLoad {
-            0% { opacity: 0; transform: translateY(20px); }
+            0% { opacity: 0; transform: translateY(15px); }
             100% { opacity: 1; transform: translateY(0); }
         }
 
-        /* 2. Images mobile se bahar na nikle */
+        /* Sirf badi photos ko mobile ke bahar jane se rokega, baki design nahi chhedega */
         img, video, iframe {
             max-width: 100% !important;
             height: auto !important;
-        }
-
-        /* 3. Mobile ke hisaab se Text */
-        h1 { font-size: 28px !important; }
-        h2 { font-size: 24px !important; }
-        p { font-size: 16px !important; }
-
-        /* 4. Side-by-side box ko ek-ke-niche-ek karne ke liye */
-        .flex-container, .row, .grid {
-            display: flex !important;
-            flex-direction: column !important;
-            width: 100% !important;
         }
     }
 </style>
