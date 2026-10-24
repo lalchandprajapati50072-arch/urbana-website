@@ -170,6 +170,51 @@
     transform: translateY(0);
 }
     </style>
+    <style>
+    /* === UNIVERSAL RESPONSIVE FIXES (FOR iOS, ANDROID & TABLETS) === */
+    
+    /* 1. Images aur Videos hamesha screen ke andar rahengi, bahar nahi niklengi */
+    img, video, iframe {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block;
+    }
+
+    /* 2. Padding ki wajah se width na badhe */
+    * {
+        box-sizing: border-box;
+    }
+
+    /* 3. Mobile aur Tablet (768px se choti screen) ke liye special rules */
+    @media only screen and (max-width: 768px) {
+        
+        /* Agar screen choti hai, toh website ko kinaro se thodi jagah (padding) milni chahiye */
+        body {
+            padding: 0 10px;
+            overflow-x: hidden; /* Screen ko left-right hilne se rokne ke liye */
+        }
+
+        /* Bade text (Headings) mobile par thode chote ho jayenge taki ache dikhein */
+        h1 { font-size: 28px !important; }
+        h2 { font-size: 24px !important; }
+        p { font-size: 16px !important; }
+
+        /* Agar aapne koi box side-by-side banaye hain, toh wo mobile me automatically ek ke niche ek aa jayenge */
+        .flex-container, .row, .grid {
+            display: flex !important;
+            flex-direction: column !important;
+            width: 100% !important;
+        }
+
+        /* Buttons ko mobile par thoda bada aur click karne me aasaan banaya gaya hai */
+        button, .btn, a {
+            width: 100%; /* Button poori width lega */
+            text-align: center;
+            padding: 15px !important;
+            margin-bottom: 10px;
+        }
+    }
+</style>
 </head>
 <body class="antialiased selection:bg-urbana-gold selection:text-white">
 
