@@ -170,48 +170,39 @@
     transform: translateY(0);
 }
     </style>
-    <style>
-    /* === UNIVERSAL RESPONSIVE FIXES (FOR iOS, ANDROID & TABLETS) === */
-    
-    /* 1. Images aur Videos hamesha screen ke andar rahengi, bahar nahi niklengi */
-    img, video, iframe {
-        max-width: 100% !important;
-        height: auto !important;
-        display: block;
-    }
-
-    /* 2. Padding ki wajah se width na badhe */
-    * {
-        box-sizing: border-box;
-    }
-
-    /* 3. Mobile aur Tablet (768px se choti screen) ke liye special rules */
+<style>
+    /* === DESKTOP KUCH NAHI BADLEGA, SIRF MOBILE & TABLET KE LIYE === */
     @media only screen and (max-width: 768px) {
         
-        /* Agar screen choti hai, toh website ko kinaro se thodi jagah (padding) milni chahiye */
+        /* 1. Mobile par khulte hi Motion (Animation) aayega */
         body {
+            animation: smoothLoad 0.8s ease-out forwards;
             padding: 0 10px;
-            overflow-x: hidden; /* Screen ko left-right hilne se rokne ke liye */
+            overflow-x: hidden; 
         }
 
-        /* Bade text (Headings) mobile par thode chote ho jayenge taki ache dikhein */
+        /* Motion ka design (Fade aur Slide-up) */
+        @keyframes smoothLoad {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* 2. Images mobile se bahar na nikle */
+        img, video, iframe {
+            max-width: 100% !important;
+            height: auto !important;
+        }
+
+        /* 3. Mobile ke hisaab se Text */
         h1 { font-size: 28px !important; }
         h2 { font-size: 24px !important; }
         p { font-size: 16px !important; }
 
-        /* Agar aapne koi box side-by-side banaye hain, toh wo mobile me automatically ek ke niche ek aa jayenge */
+        /* 4. Side-by-side box ko ek-ke-niche-ek karne ke liye */
         .flex-container, .row, .grid {
             display: flex !important;
             flex-direction: column !important;
             width: 100% !important;
-        }
-
-        /* Buttons ko mobile par thoda bada aur click karne me aasaan banaya gaya hai */
-        button, .btn, a {
-            width: 100%; /* Button poori width lega */
-            text-align: center;
-            padding: 15px !important;
-            margin-bottom: 10px;
         }
     }
 </style>
