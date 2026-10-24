@@ -886,5 +886,147 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+    <!-- === URBANA RATING & FEEDBACK SECTION (ALL-IN-ONE) === -->
+
+<style>
+    .urbana-feedback-section {
+        background-color: #111; /* Dark Premium Background */
+        padding: 60px 20px;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        color: #fff;
+    }
+    .feedback-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #1a1a1a;
+        padding: 40px;
+        border-radius: 15px;
+        border: 1px solid rgba(199, 154, 75, 0.3);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .feedback-title {
+        color: #c79a4b;
+        font-size: 24px;
+        font-family: 'Times New Roman', serif;
+        margin-bottom: 10px;
+    }
+    .feedback-desc {
+        font-size: 14px;
+        color: #aaa;
+        margin-bottom: 25px;
+    }
+    /* Star Rating CSS */
+    .star-rating {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 25px;
+        flex-direction: row-reverse; /* For hover logic */
+    }
+    .star-rating input {
+        display: none;
+    }
+    .star-rating label {
+        font-size: 40px;
+        color: #444;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .star-rating input:checked ~ label,
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+        color: #c79a4b; /* Gold color */
+        text-shadow: 0 0 15px rgba(199, 154, 75, 0.5);
+    }
+    /* Input Area */
+    .feedback-textarea {
+        width: 100%;
+        background: #222;
+        border: 1px solid #444;
+        color: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        min-height: 100px;
+        margin-bottom: 20px;
+        outline: none;
+        resize: vertical;
+        box-sizing: border-box;
+    }
+    .feedback-textarea:focus {
+        border-color: #c79a4b;
+    }
+    /* Submit Button */
+    .feedback-btn {
+        background: linear-gradient(135deg, #c79a4b, #a67c33);
+        color: #fff;
+        border: none;
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 100%;
+    }
+    .feedback-btn:hover {
+        background: linear-gradient(135deg, #a67c33, #8c6628);
+        transform: translateY(-2px);
+    }
+</style>
+
+<section class="urbana-feedback-section">
+    <div class="feedback-container">
+        <h2 class="feedback-title">Rate Your Experience</h2>
+        <p class="feedback-desc">Tell us about your project requirements or share your feedback.</p>
+        
+        <!-- Stars -->
+        <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5" title="5 stars">★</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4" title="4 stars">★</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3" title="3 stars">★</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2" title="2 stars">★</label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1" title="1 star">★</label>
+        </div>
+
+        <!-- Text Box -->
+        <textarea id="feedback-text" class="feedback-textarea" placeholder="E.g., I am looking for a 3BHK interior design in Narol..."></textarea>
+
+        <!-- WhatsApp Button -->
+        <button id="submit-feedback" class="feedback-btn">Send to URBANA</button>
+    </div>
+</section>
+
+<script>
+    document.getElementById("submit-feedback").addEventListener("click", function() {
+        // Find which star is selected
+        let selectedRating = document.querySelector('input[name="rating"]:checked');
+        let ratingValue = selectedRating ? selectedRating.value : "No rating given";
+        
+        // Get the text from the box
+        let feedbackText = document.getElementById("feedback-text").value;
+        
+        // Check if user wrote something
+        if(!selectedRating && feedbackText.trim() === "") {
+            alert("Please select a rating or enter your requirements.");
+            return;
+        }
+
+        // Create the WhatsApp message
+        let whatsappNumber = "919574643142"; // Aapka URBANA number
+        let message = `Hello URBANA!\n\n*My Rating:* ${ratingValue} Stars ⭐\n*My Requirement/Feedback:* ${feedbackText}`;
+        
+        // Encode message and redirect to WhatsApp
+        let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappURL, "_blank");
+    });
+</script>
+
+<!-- === END RATING SECTION === -->
 </body>
 </html>
