@@ -350,148 +350,186 @@
             </div>
         </div>
     </section>
-    <!-- =========================================================
-     URBANA HOME INTERIOR & DESIGN STUDIO — LIVE 3D SCROLL WALKTHROUGH
-     Place immediately after your Hero </section> in index.html
-     ========================================================= -->
-<section id="urbana-walkthrough" class="relative h-[440vh] bg-[#070b09] text-white">
+    <!-- URBANA 3D SCROLL WALKTHROUGH START -->
+<section id="urbana-walkthrough" class="relative h-[450vh] bg-[#070b09] text-white select-none">
   <div class="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
 
-    <!-- 3D Camera Walk-In Container -->
     <div id="urbana-cam-rig"
          class="relative w-full h-full will-change-transform transition-transform duration-150 ease-out"
          style="transform-style: preserve-3d; transform: scale(1.03) translate3d(0px, 0px, 0px);">
 
-      <!-- Stage 01: Purana / Bare Brick & Concrete Shell -->
       <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2000&q=90"
            alt="Stage 01 Bare Shell Structure"
            class="urbana-wt-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100">
 
-      <!-- Stage 02: False Ceiling, Plaster & Plain White Flooring -->
       <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=2000&q=90"
-           alt="Stage 02 Gypsum False Ceiling and Flooring"
+           alt="Stage 02 Gypsum False Ceiling and 2x4 White Tiles"
            class="urbana-wt-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
 
-      <!-- Stage 03: Carpentry, Wood Louvers & Raw Concrete Texture -->
-      <img src="
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=90"
+           alt="Stage 03 Carpentry Louvers and Raw Concrete"
+           class="urbana-wt-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
 
-    <!-- Interactive Wall Art Studio -->
-   <!-- Services Section Start -->
-<!-- Services Section Start -->
-<section id="services" class="urbana-services-section py-20 bg-[#f5f2eb] overflow-hidden">
-  <div class="container mx-auto px-4 max-w-6xl">
-    <div class="section-header text-center mb-16 animate-header">
-      <h2 class="text-4xl uppercase tracking-widest text-[#1a1a1a] mb-3 font-royal">Our Services</h2>
-      <p class="text-lg text-[#5a5047]">Comprehensive interior & architectural solutions for a modern lifestyle.</p>
+      <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2000&q=90"
+           alt="Stage 04 Warm Cove Lighting and Royal Handover"
+           class="urbana-wt-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
+
     </div>
-    
-    <div class="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
-      <!-- Background Abstract Elements (Optional, for added style) -->
-      <div class="absolute top-[-50px] left-[-50px] w-64 h-64 bg-[#c5a059] opacity-5 rounded-full blur-3xl z-0"></div>
-      <div class="absolute bottom-[-50px] right-[-50px] w-80 h-80 bg-[#c5a059] opacity-5 rounded-full blur-3xl z-0"></div>
 
-      <!-- Furniture Design -->
-      <div class="service-card animate-slide-up bg-white/80 backdrop-blur-sm p-10 rounded-2xl text-center border border-[#e8e0d5] relative z-10" style="transition-delay: 0.1s;">
-        <div class="icon-wrapper mx-auto mb-6 w-20 h-20 flex items-center justify-center rounded-full bg-[#fcfbf9] border border-[#f0ebe1] shadow-sm transition-transform duration-500 hover:rotate-12">
-            <i class="fa-solid fa-couch text-3xl text-[#c5a059]"></i>
-        </div>
-        <h3 class="text-xl font-semibold uppercase tracking-widest text-[#2c251f] mb-4 font-royal">Furniture Design</h3>
-        <p class="text-[#665d55] text-sm leading-relaxed">Description: A modern designer seating & table.</p>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/60 pointer-events-none"></div>
+
+    <div class="absolute top-6 left-1/2 -translate-x-1/2 z-20 text-center w-full max-w-2xl px-4 pointer-events-none">
+      <span id="wt-top-badge"
+            class="inline-block px-4 py-1 rounded-full bg-black/75 border border-[#D4AF37]/60 text-xs sm:text-sm font-bold tracking-wider text-[#D4AF37] shadow-lg">
+        Stage 01 / 04
+      </span>
+      <h2 id="wt-main-heading" class="text-2xl sm:text-4xl font-extrabold text-white mt-2 drop-shadow-lg">
+        Purana / Bare Shell Structure
+      </h2>
+      <p id="wt-top-cost" class="text-xl sm:text-3xl font-extrabold text-[#D4AF37] mt-1 drop-shadow">
+        ₹1,80,000
+      </p>
+    </div>
+
+    <div class="absolute right-4 left-4 bottom-24 sm:left-auto sm:right-10 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 sm:w-[340px] z-20 rounded-2xl bg-black/80 backdrop-blur-md border border-[#D4AF37]/40 p-5 shadow-2xl">
+      <p class="text-[11px] uppercase tracking-[0.2em] text-[#D4AF37] font-bold mb-2.5">
+        Active Materials & Work
+      </p>
+      <ul id="wt-materials" class="space-y-2 text-xs sm:text-sm text-gray-100">
+        <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span>Exposed Brick & Structural Plumb</li>
+        <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span>Concealed Copper Wiring Conduits</li>
+        <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span>Damp-Proof Base Waterproofing</li>
+      </ul>
+
+      <a href="https://wa.me/919574643142?text=Hi%20URBANA%2C%20maine%20aapki%20website%20par%203D%20home%20transformation%20walkthrough%20dekha%2C%20mujhe%20apne%20ghar%20ke%20liye%20quote%20chahiye."
+         target="_blank" rel="noopener noreferrer"
+         class="mt-4 inline-flex items-center justify-center w-full py-2.5 px-4 rounded-xl bg-[#D4AF37] hover:bg-yellow-500 text-black font-bold text-xs transition shadow-lg">
+        Get Exact Quote on WhatsApp
+      </a>
+    </div>
+
+    <div class="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 w-[92%] max-w-xl rounded-2xl bg-black/80 backdrop-blur-md border border-white/15 px-5 py-3.5 shadow-2xl">
+      <div class="grid grid-cols-4 gap-2 mb-2">
+        <div id="seg-0" class="h-1.5 rounded-full bg-[#D4AF37] transition-all duration-300"></div>
+        <div id="seg-1" class="h-1.5 rounded-full bg-white/20 transition-all duration-300"></div>
+        <div id="seg-2" class="h-1.5 rounded-full bg-white/20 transition-all duration-300"></div>
+        <div id="seg-3" class="h-1.5 rounded-full bg-white/20 transition-all duration-300"></div>
       </div>
-
-      <!-- Marble & Tiles Crafting -->
-      <div class="service-card animate-slide-up bg-white/80 backdrop-blur-sm p-10 rounded-2xl text-center border border-[#e8e0d5] relative z-10" style="transition-delay: 0.2s;">
-        <div class="icon-wrapper mx-auto mb-6 w-20 h-20 flex items-center justify-center rounded-full bg-[#fcfbf9] border border-[#f0ebe1] shadow-sm transition-transform duration-500 hover:rotate-12">
-            <i class="fa-solid fa-table-cells-large text-3xl text-[#c5a059]"></i>
-        </div>
-        <h3 class="text-xl font-semibold uppercase tracking-widest text-[#2c251f] mb-4 font-royal">Marble & Tiles Crafting</h3>
-        <p class="text-[#665d55] text-sm leading-relaxed">Cutting, fitting & design for kitchens, bathrooms, halls, & TV walls.</p>
-      </div>
-
-      <!-- POP Design -->
-      <div class="service-card animate-slide-up bg-white/80 backdrop-blur-sm p-10 rounded-2xl text-center border border-[#e8e0d5] relative z-10" style="transition-delay: 0.3s;">
-        <div class="icon-wrapper mx-auto mb-6 w-20 h-20 flex items-center justify-center rounded-full bg-[#fcfbf9] border border-[#f0ebe1] shadow-sm transition-transform duration-500 hover:rotate-12">
-            <i class="fa-solid fa-layer-group text-3xl text-[#c5a059]"></i>
-        </div>
-        <h3 class="text-xl font-semibold uppercase tracking-widest text-[#2c251f] mb-4 font-royal">POP Design</h3>
-        <p class="text-[#665d55] text-sm leading-relaxed">Description: Architectural ceiling, layers/patterns.</p>
-      </div>
-
-      <!-- CNC Design -->
-      <div class="service-card animate-slide-up bg-white/80 backdrop-blur-sm p-10 rounded-2xl text-center border border-[#e8e0d5] relative z-10" style="transition-delay: 0.4s;">
-         <div class="icon-wrapper mx-auto mb-6 w-20 h-20 flex items-center justify-center rounded-full bg-[#fcfbf9] border border-[#f0ebe1] shadow-sm transition-transform duration-500 hover:rotate-12">
-            <i class="fa-solid fa-vector-square text-3xl text-[#c5a059]"></i>
-        </div>
-        <h3 class="text-xl font-semibold uppercase tracking-widest text-[#2c251f] mb-4 font-royal">CNC Design</h3>
-        <p class="text-[#665d55] text-sm leading-relaxed">Description: Intricate geometric/laser-cut ltr.</p>
-      </div>
-
-      <!-- Lighting Design -->
-      <div class="service-card animate-slide-up bg-white/80 backdrop-blur-sm p-10 rounded-2xl text-center border border-[#e8e0d5] relative z-10" style="transition-delay: 0.5s;">
-         <div class="icon-wrapper mx-auto mb-6 w-20 h-20 flex items-center justify-center rounded-full bg-[#fcfbf9] border border-[#f0ebe1] shadow-sm transition-transform duration-500 hover:rotate-12">
-            <i class="fa-solid fa-lightbulb text-3xl text-[#c5a059]"></i>
-        </div>
-        <h3 class="text-xl font-semibold uppercase tracking-widest text-[#2c251f] mb-4 font-royal">Lighting Design</h3>
-        <p class="text-[#665d55] text-sm leading-relaxed">Description: A contemporary pendant/indoor lighting.</p>
-      </div>
-
-      <!-- Home Decor & Styling -->
-      <div class="service-card animate-slide-up bg-white/80 backdrop-blur-sm p-10 rounded-2xl text-center border border-[#e8e0d5] relative z-10" style="transition-delay: 0.6s;">
-         <div class="icon-wrapper mx-auto mb-6 w-20 h-20 flex items-center justify-center rounded-full bg-[#fcfbf9] border border-[#f0ebe1] shadow-sm transition-transform duration-500 hover:rotate-12">
-            <i class="fa-solid fa-leaf text-3xl text-[#c5a059]"></i>
-        </div>
-        <h3 class="text-xl font-semibold uppercase tracking-widest text-[#2c251f] mb-4 font-royal">Home Decor & Styling</h3>
-        <p class="text-[#665d55] text-sm leading-relaxed">Description: Curated decor/vase/interior objects.</p>
+      <div class="flex items-center justify-between text-xs text-gray-300">
+        <span id="wt-phase-label" class="font-semibold text-white">Phase 1</span>
+        <span class="text-[#D4AF37] font-medium">Scroll to Explore ↓</span>
       </div>
     </div>
+
   </div>
 </section>
-<!-- Services Section End -->
-<!-- Services Section End -->
 
-    <!-- Core Services Section -->
-    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-14">
-            <span class="text-urbana-goldDark text-xs font-bold uppercase tracking-widest">End-to-End Turnkey Solutions</span>
-            <h2 class="text-3xl sm:text-4xl font-bold text-stone-900 mt-2">Our Luxury Interior Services</h2>
-            <p class="text-stone-600 mt-2">Designed for modern homeowners looking for elegance, durability, and Vastu harmony.</p>
-        </div>
+<script>
+(function () {
+  const section = document.getElementById('urbana-walkthrough');
+  if (!section) return;
 
-        <div class="grid md:grid-cols-3 gap-8">
-            <article class="bg-white rounded-3xl border border-stone-200 shadow-sm hover:shadow-xl transition overflow-hidden">
-                <img src="hero-living.jpg" alt="Modern luxury living room interior" class="w-full h-52 object-cover">
-                <div class="p-8">
-                <div class="w-12 h-12 rounded-2xl gold-gradient text-white flex items-center justify-center font-bold text-xl mb-5">01</div>
-                <h3 class="text-xl font-bold text-stone-900">Full Home Turnkey Interiors</h3>
-                <p class="text-stone-600 text-sm mt-3 leading-relaxed">
-                    Complete transformation for 2BHK, 3BHK, 4BHK flats and luxury villas—including false ceiling, lighting, Italian marble flooring, and wall paneling.
-                </p>
-                </div>
-            </article>
+  const camRig = document.getElementById('urbana-cam-rig');
+  const imgs = Array.from(section.querySelectorAll('.urbana-wt-img'));
+  const topBadge = document.getElementById('wt-top-badge');
+  const mainHeading = document.getElementById('wt-main-heading');
+  const topCost = document.getElementById('wt-top-cost');
+  const materialsEl = document.getElementById('wt-materials');
+  const phaseLabel = document.getElementById('wt-phase-label');
+  const segs = [
+    document.getElementById('seg-0'),
+    document.getElementById('seg-1'),
+    document.getElementById('seg-2'),
+    document.getElementById('seg-3')
+  ];
 
-            <article class="bg-white rounded-3xl border border-stone-200 shadow-sm hover:shadow-xl transition overflow-hidden">
-                <img src="modular-kitchen.jpg" alt="Premium modular kitchen interior" class="w-full h-52 object-cover">
-                <div class="p-8">
-                <div class="w-12 h-12 rounded-2xl gold-gradient text-white flex items-center justify-center font-bold text-xl mb-5">02</div>
-                <h3 class="text-xl font-bold text-stone-900">Modular Kitchens & Wardrobes</h3>
-                <p class="text-stone-600 text-sm mt-3 leading-relaxed">
-                    German-hardware acrylic, PU, and fluted glass modular kitchens and floor-to-ceiling sliding wardrobes with 10-year warranty.
-                </p>
-                </div>
-            </article>
+  const stages = [
+    {
+      badge: 'Stage 01 / 04',
+      phase: 'Phase 1',
+      title: 'Purana / Bare Shell Structure',
+      cost: '₹1,80,000',
+      materials: [
+        'Exposed Brick & Structural Plumb',
+        'Concealed Copper Wiring Conduits',
+        'Damp-Proof Base Waterproofing'
+      ]
+    },
+    {
+      badge: 'Stage 02 / 04',
+      phase: 'Phase 2',
+      title: 'Gypsum False Ceiling & 2x4 White Tiles',
+      cost: '₹4,60,000',
+      materials: [
+        'Gypsum False Ceiling Framing',
+        'Plain White 2x4 Vitrified Tiles',
+        'Smooth Putty & Primed Walls'
+      ]
+    },
+    {
+      badge: 'Stage 03 / 04',
+      phase: 'Phase 3',
+      title: 'Carpentry, Louvers & Raw Concrete',
+      cost: '₹8,90,000',
+      materials: [
+        'Fluted Wood Louvers & TV Console',
+        'Raw Concrete Accent Wall Finish',
+        'BWP Marine Plywood & Hardware'
+      ]
+    },
+    {
+      badge: 'Stage 04 / 04',
+      phase: 'Phase 4',
+      title: 'Warm Cove Lighting & Royal Handover',
+      cost: '₹12,50,000',
+      materials: [
+        'Warm 3000K Cove & Accent Lighting',
+        'Emerald Green & Gold Wall Moulding',
+        'Turnkey Sofa, Brass Table & Styling'
+      ]
+    }
+  ];
 
-            <article class="bg-white rounded-3xl border border-stone-200 shadow-sm hover:shadow-xl transition overflow-hidden">
-                <img src="pooja-room.jpg" alt="Elegant pooja room interior" class="w-full h-52 object-cover">
-                <div class="p-8">
-                <div class="w-12 h-12 rounded-2xl gold-gradient text-white flex items-center justify-center font-bold text-xl mb-5">03</div>
-                <h3 class="text-xl font-bold text-stone-900">Pooja Rooms & Spiritual Decor</h3>
-                <p class="text-stone-600 text-sm mt-3 leading-relaxed">
-                    CNC-carved Corian mandir units, brass bells, backlit onyx panels, and custom statement pieces like our geometric Lord Krishna artwork.
-                </p>
-                </div>
-            </article>
-        </div>
-    </section>
+  let currentIdx = -1;
+
+  function updateWalkthrough() {
+    const rect = section.getBoundingClientRect();
+    const scrollable = Math.max(1, section.offsetHeight - window.innerHeight);
+    const ratio = Math.min(Math.max(0, -rect.top), scrollable) / scrollable;
+
+    const scale = 1.03 + ratio * 0.13;
+    const panX = (ratio - 0.5) * -30;
+    const panY = (ratio - 0.5) * -14;
+    camRig.style.transform = `scale(${scale.toFixed(3)}) translate3d(${panX.toFixed(1)}px, ${panY.toFixed(1)}px, 0px)`;
+
+    const idx = Math.min(3, Math.floor(ratio * 4));
+    if (idx !== currentIdx) {
+      currentIdx = idx;
+      const st = stages[idx];
+
+      imgs.forEach((img, i) => {
+        img.style.opacity = i === idx ? '1' : '0';
+      });
+
+      segs.forEach((seg, i) => {
+        seg.style.backgroundColor = i <= idx ? '#D4AF37' : 'rgba(255,255,255,0.2)';
+      });
+
+      topBadge.textContent = st.badge;
+      mainHeading.textContent = st.title;
+      topCost.textContent = st.cost;
+      phaseLabel.textContent = st.phase;
+      materialsEl.innerHTML = st.materials
+        .map((m) => `<li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-[#D4AF37]"></span>${m}</li>`)
+        .join('');
+    }
+  }
+
+  window.addEventListener('scroll', updateWalkthrough, { passive: true });
+  updateWalkthrough();
+})();
+</script>
+<!-- URBANA 3D SCROLL WALKTHROUGH END -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-16 bg-stone-100/80 border-y border-stone-200">
